@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -25,6 +26,14 @@ public class Calculator {
 
     public double distance(Point a, Point b) {
         return sqrt(pow(distanceX(a, b), 2) + pow(distanceY(a, b), 2));
+    }
+
+    public double calculateAreaSum(Shape[] shapes) {
+        double sum =0;
+        for (int i = 0; i < shapes.length; i++) {
+            sum += shapes[i].area();
+        }
+        return sum;
     }
 
 

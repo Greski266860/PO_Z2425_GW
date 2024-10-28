@@ -1,7 +1,7 @@
 import static java.lang.Math.PI;
 import static java.lang.Math.pow;
 
-public class Circle {
+public class Circle extends Shape {
     protected Point center;
     protected double d;
 

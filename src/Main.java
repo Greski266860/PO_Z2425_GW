@@ -24,6 +24,18 @@ public class Main {
     Point ps4 = new Point(0, 3);
     System.out.println(calc.isSquare(ps1, ps2, ps3, ps4));
 
+    Square square = new Square(ps1, ps2, ps3, ps4);
+
+    Point p4 = new Point(1, 2);
+    Point p5 = new Point(0, 2);
+    Point p6 = new Point(0, 0);
+    Triangle triangle = new Triangle(p4, p5, p6);
+    Shape[] shapes = {square, triangle};
+
+    System.out.println("\nTriangle area: " + triangle.area());
+    System.out.println("Square area: " + square.area());
+    System.out.println("Sum area: " + calc.calculateAreaSum(shapes));
+
 
 
     }
